@@ -3,5 +3,5 @@ CNAME
 /categories
 /tags
 /post/page
-/post/*.xml
+/post/*.*ml
 *.xml
