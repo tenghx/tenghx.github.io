@@ -1,0 +1,6 @@
+.DS_Store
+/categories
+/tags
+/post/page
+/post/*.xml
+*.xml
