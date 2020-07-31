@@ -476,6 +476,7 @@ img {
 }
 .post-tags li + li {
   margin-left: 3px;
+  margin-bottom: 8px;
 }
 .post-tags a {
   display: block;
