@@ -14,7 +14,7 @@ function setTheme() {
         }
 
         if (date !== prev) {
-          fetch('https://anycode.online/astronomy')
+          fetch('https://' + window.location.hostname + '/astronomy')
             .then(res => res.json())
             .then(data => {
               sunrise = data.sunrise.split(':').map(Number);
