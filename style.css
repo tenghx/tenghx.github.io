@@ -31,22 +31,6 @@
 .list {
   background: var(--code-bg);
 }
-@media (prefers-color-scheme: light) {
-  :root {
-    --theme: #fff;
-  --entry: #fff;
-  --primary: rgba(0, 0, 0, 0.88);
-  --secondary: rgba(0, 0, 0, 0.56);
-  --tertiary: rgba(0, 0, 0, 0.16);
-  --content: rgba(0, 0, 0, 0.88);
-
-  --hljs-bg: #1c1d21;
-  --code-bg: #f5f5f5;
-  --border: #eee;
-  }
-  .list {
-    background: var(--code-bg);
-  }
 @media (prefers-color-scheme: dark) {
   :root {
     --theme: #1d1e20;
@@ -63,6 +47,7 @@
   .list {
     background: var(--theme);
   }
+}
 /* Reset
 -------------------------------------------------- */
 *,
