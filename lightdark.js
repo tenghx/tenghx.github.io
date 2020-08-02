@@ -9,7 +9,7 @@ function setTheme() {
         let sunset;
 
         function setBodyClass() {
-          if (now > sunrise && now < sunset) return;
+          if (now < sunrise || now > sunset) return;
           document.body.classList.add('dark');
         }
 
