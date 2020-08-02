@@ -14,7 +14,7 @@ function setTheme() {
         }
 
         if (date !== prev) {
-          fetch('https://api.ipgeolocation.io/astronomy?apiKey=5ed37d85103e4defa5df4c5298ed5215')
+          fetch('https://api.ipgeolocation.io/astronomy?apiKey=0ccc869db7af49c5b332c106e7dd0d91')
             .then(res => res.json())
             .then(data => {
               sunrise = data.sunrise.split(':').map(Number);
