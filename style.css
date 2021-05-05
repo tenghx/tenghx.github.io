@@ -28,25 +28,23 @@
   --code-bg: #f5f5f5;
   --border: #eee;
 }
+.dark {
+  --theme: #1d1e20;
+  --entry: #2e2e33;
+  --primary: rgba(255, 255, 255, 0.84);
+  --secondary: rgba(255, 255, 255, 0.56);
+  --tertiary: rgba(255, 255, 255, 0.16);
+  --content: rgba(255, 255, 255, 0.64);
+
+  --hljs-bg: #2e2e33;
+  --code-bg: #37383e;
+  --border: #5b5d67;
+}
 .list {
   background: var(--code-bg);
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --theme: #1d1e20;
-    --entry: #2e2e33;
-    --primary: rgba(255, 255, 255, 0.84);
-    --secondary: rgba(255, 255, 255, 0.56);
-    --tertiary: rgba(255, 255, 255, 0.16);
-    --content: rgba(255, 255, 255, 0.64);
-  
-    --hljs-bg: #2e2e33;
-    --code-bg: #37383e;
-    --border: #5b5d67;
-  }
-  .list {
-    background: var(--theme);
-  }
+.dark.list {
+  background: var(--theme);
 }
 /* Reset
 -------------------------------------------------- */
@@ -479,7 +477,6 @@ img {
 }
 .post-tags li + li {
   margin-left: 3px;
-  margin-bottom: 8px;
 }
 .post-tags a {
   display: block;
@@ -527,27 +524,6 @@ img {
   align-items: center;
   justify-content: center;
   height: 80%;
-  font-size: 40px;
+  font-size: 160px;
   font-weight: 700;
-}
-/* Place a custom css file in your own project to use this. */
-.list-tags li {
-  display: inline-block;
-}
-.list-tags li + li {
-  margin-left: 3px;
-  margin-bottom: 8px;
-}
-.list-tags a {
-  display: block;
-  padding-left: 14px;
-  padding-right: 14px;
-  color: var(--content);
-  font-size: 14px;
-  line-height: 34px;
-  background: var(--entry);
-  border-radius: 4px;
-}
-.list-tags a:hover {
-  background: var(--border);
 }
